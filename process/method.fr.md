@@ -66,6 +66,8 @@ flowchart LR
 
 ## 6. La vision politique (registre 3)
 
+> **Texte intégral :** [`political-vision.fr.md`](political-vision.fr.md) — les six thèses et leurs références.
+
 Salle des machines, pas paroles. Énactée dans les croisements, la licence, la forgerie — presque jamais dite.
 
 - **Authenticité = pouvoir** : on forge le réel pour exposer qu'il est *certifié*, pas essentiel. *(Debord, Benjamin.)*

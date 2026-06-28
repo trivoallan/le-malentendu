@@ -20,6 +20,7 @@ Libre, sous **AGPLv3**.
 | | |
 |---|---|
 | [`process/method.md`](process/method.fr.md) | la spec : 2 couches (son + texte), 3 registres (musicologie / ressenti / politique), atomes vs molécules, vision politique |
+| [`process/political-vision.md`](process/political-vision.fr.md) | la vision politique intégrale — six thèses : authenticité, commun, créolisation, opacité, auto-implication, sens |
 | [`process/rfc/`](process/rfc/) | les RFC — la méthode mise en débat. **La discussion se fait sur les Pull Requests.** |
 | [`poc/`](poc/) | la preuve : `python3 poc/compile.py` compile une fusion vers un prompt Suno **et** un brief humain (deux backends, une source) |
 | [`catalogue/`](catalogue/) | les *malentendus trouvés* — les beaux accidents qu'on garde |

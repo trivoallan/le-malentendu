@@ -72,6 +72,8 @@ flowchart LR
 
 ## 6. The political vision (register 3)
 
+> **Full text:** [`political-vision.md`](political-vision.md) — the six theses with their references.
+
 Engine room, not lyrics. Enacted in the crossings, the license, the forgery — almost never said.
 
 - **Authenticity = power**: we forge the real to expose that it is *certified*, not essential. *(Debord, Benjamin.)*
