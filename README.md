@@ -1,3 +1,5 @@
+[🇫🇷 Français](README.md) · [🇬🇧 English](README.en.md)
+
 # Le Malentendu
 
 > « La musique qui n'a jamais existé. »
