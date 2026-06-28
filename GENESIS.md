@@ -61,7 +61,7 @@ spreadsheet mistaken for a treasure — and it found itself by being corrected.
 Showing that is the work as much as the engine.
 
 > The explicit method — persona roster + decision process:
-> [`process/methode.md`](process/methode.md) · [`process/personas-et-decision.md`](process/personas-et-decision.md).
+> [`process/method.md`](process/method.md) · [`process/personas.md`](process/personas.md).
 
 ---
 

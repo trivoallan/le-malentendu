@@ -1,10 +1,10 @@
-🇬🇧 **English** · [🇫🇷 Français](methode.fr.md)
+🇬🇧 **English** · [🇫🇷 Français](method.fr.md)
 
 # The Method — representation model
 
 > **Living** spec. This is where we refine the model; the PoC ([`../poc/`](../poc/))
 > implements it once the spec is stable, to avoid hacking the JSON on every idea.
-> See also: [GENESIS.md](../GENESIS.md) (how it was born) · [personas-et-decision.md](personas-et-decision.md) (who decides) · [exemples-et-schemas.md](exemples-et-schemas.md) (diagrams + examples).
+> See also: [GENESIS.md](../GENESIS.md) (how it was born) · [personas.md](personas.md) (who decides) · [examples.md](examples.md) (diagrams + examples).
 
 ## 0. Founding principle
 
@@ -102,7 +102,7 @@ Named stake: **self-implication.** An AI fusing music from colonized cultures ri
 - **text** → lyricists + the bitwize guardrails.
 - **political** → the author: the vision is owned and attributed.
 
-Full decision process: [personas-et-decision.md](personas-et-decision.md).
+Full decision process: [personas.md](personas.md).
 
 ---
 

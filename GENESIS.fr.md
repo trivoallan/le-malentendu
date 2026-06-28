@@ -87,7 +87,7 @@ pour un trésor — et il s'est trouvé en se faisant corriger.
 Montrer ça, c'est l'œuvre autant que le moteur.
 
 > La méthode explicite — roster des personas + processus décisionnel :
-> [`process/personas-et-decision.md`](process/personas-et-decision.fr.md).
+> [`process/personas.md`](process/personas.fr.md).
 
 ---
 

@@ -1,4 +1,4 @@
-[🇬🇧 English](malentendus.md) · 🇫🇷 **Français**
+[🇬🇧 English](misunderstandings.md) · 🇫🇷 **Français**
 
 # Malentendu Records — catalogue des malentendus trouvés
 

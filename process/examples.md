@@ -1,9 +1,9 @@
-🇬🇧 **English** · [🇫🇷 Français](exemples-et-schemas.fr.md)
+🇬🇧 **English** · [🇫🇷 Français](examples.fr.md)
 
 # Le Malentendu — illustrated: diagrams & examples
 
-Companion to [`methode.md`](methode.md) (the spec) and
-[`personas-et-decision.md`](personas-et-decision.md) (who decides).
+Companion to [`method.md`](method.md) (the spec) and
+[`personas.md`](personas.md) (who decides).
 Diagrams are Mermaid: GitHub renders them automatically.
 
 ---

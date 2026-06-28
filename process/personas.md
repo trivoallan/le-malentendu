@@ -1,4 +1,4 @@
-🇬🇧 **English** · [🇫🇷 Français](personas-et-decision.fr.md)
+🇬🇧 **English** · [🇫🇷 Français](personas.fr.md)
 
 # Personas & decision process
 
