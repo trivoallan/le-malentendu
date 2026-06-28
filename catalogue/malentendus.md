@@ -1,23 +1,25 @@
-# Malentendu Records — catalogue des malentendus trouvés
+🇬🇧 **English** · [🇫🇷 Français](malentendus.fr.md)
 
-Des résultats que le moteur a produits **sans qu'on les vise** — gardés parce que
-le malentendu *est* l'œuvre. Chaque specimen note : ce qu'on a demandé, ce qu'on
-a obtenu, qui l'a entendu.
+# Malentendu Records — catalogue of found misunderstandings
 
-Distinct de la méthode (`../poc/`) : là, ce qui était *prévu* ; ici, ce qui est
-*arrivé*. La méthode vise juste ; le catalogue garde les beaux accidents.
+Results the engine produced **without us aiming for them** — kept because the
+misunderstanding *is* the work. Each specimen notes: what we asked for, what we
+got, who heard it.
+
+Distinct from the method (`../poc/`): there, what was *intended*; here, what
+*happened*. The method aims true; the catalogue keeps the beautiful accidents.
 
 ---
 
-## MR-001 — « Hongrie d'URSS »
+## MR-001 — "USSR-era Hungary"
 
-- **Demandé :** Maloya × Acid blues (Réunion + acid blues de Chicago).
-- **Obtenu :** « on se croirait à émission zéro, on se croirait en Hongrie d'URSS » ; ressemble à Skorpió (rock hongrois). Le maloya a disparu.
-- **Entendu par :** une auditrice du cercle.
-- **Statut :** **gardé.** La machine a entendu la Réunion comme le bloc de l'Est ; ce mésentendu précis, personne ne l'a voulu — donc c'est une pièce, pas un raté.
-- **Note :** l'atome maloya a été *renforcé* par ailleurs (la méthode doit pouvoir viser juste quand on le veut). Garder le specimen et corriger l'atome ne se contredisent pas : c'est tout l'intérêt d'avoir une méthode *et* un catalogue.
-- **Verdict du créateur :** « je ne sais pas si c'est de la maloya, mais je trouve le morceau super » (le crÃ©ateur). Validé par l'oreille, pas par la fidélité au genre. **Ne pas étiqueter « maloya ».**
-- **Date :** 2026-06-28.
+- **Asked for:** Maloya × Acid blues (Réunion + Chicago acid blues).
+- **Got:** "sounds like a test-card broadcast, like USSR-era Hungary"; resembles Skorpió (Hungarian rock). The maloya vanished.
+- **Heard by:** a listener from the circle.
+- **Status:** **kept.** The machine heard Réunion as the Eastern bloc; nobody wanted that precise mishearing — so it's a piece, not a failure.
+- **Note:** the maloya atom was *strengthened* elsewhere (the method must be able to aim true when we want it to). Keeping the specimen and fixing the atom don't contradict — that's the whole point of having a method *and* a catalogue.
+- **Maker's verdict:** "I don't know if it's maloya, but I find the track great." Validated by ear, not by genre fidelity. **Do not label it "maloya".**
+- **Date:** 2026-06-28.
 
 ---
 

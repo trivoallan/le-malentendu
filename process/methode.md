@@ -1,100 +1,108 @@
-# La méthode — modèle de représentation
+🇬🇧 **English** · [🇫🇷 Français](methode.fr.md)
 
-> Spec **vivante**. C'est ici qu'on raffine le modèle ; le PoC ([`../poc/`](../poc/))
-> l'implémente quand la spec est stable, pour éviter de bricoler le JSON à chaque idée.
-> Voir aussi : [GENESIS.md](../GENESIS.md) (comment c'est né) · [personas-et-decision.md](personas-et-decision.md) (qui décide) · [exemples-et-schemas.md](exemples-et-schemas.md) (schémas + exemples).
+# The Method — representation model
 
-## 0. Principe fondateur
+> **Living** spec. This is where we refine the model; the PoC ([`../poc/`](../poc/))
+> implements it once the spec is stable, to avoid hacking the JSON on every idea.
+> See also: [GENESIS.md](../GENESIS.md) (how it was born, FR) · [personas-et-decision.md](personas-et-decision.md) (who decides, FR) · [exemples-et-schemas.md](exemples-et-schemas.md) (diagrams + examples).
 
-Le produit = **la méthode**, pas l'audio ni le prompt. Une fusion est décrite **une fois**, indépendamment de tout modèle ; un compilateur la rend vers une cible. **Suno / Udio / MusicGen / un musicien = backends interchangeables.**
+## 0. Founding principle
+
+The product = **the method**, not the audio or the prompt. A fusion is described
+**once**, independently of any model; a compiler renders it to a target.
+**Suno / Udio / MusicGen / a human musician = interchangeable backends.**
 
 ```mermaid
 flowchart LR
-  R["Représentation (source)<br/>model-agnostic"] --> C{"compilateur"}
-  C --> S["prompt Suno"]
-  C --> U["prompt Udio"]
+  R["Representation (source)<br/>model-agnostic"] --> C{"compiler"}
+  C --> S["Suno prompt"]
+  C --> U["Udio prompt"]
   C --> M["MusicGen"]
-  C --> H["brief humain"]
-  S -. "on écoute, on corrige" .-> R
+  C --> H["human brief"]
+  S -. "we listen, we fix" .-> R
 ```
 
-## 1. Deux couches
+## 1. Two layers
 
-Une fusion n'est pas que du son — c'est aussi des mots, et **le texte fusionne aussi** (latin liturgique sur kick profane ; saudade portugaise sur dub). Deux couches co-égales :
+A fusion isn't only sound — it's also words, and **the text fuses too** (liturgical
+Latin over a secular kick; Portuguese saudade over dub). Two co-equal layers:
 
-- **Son** : groove, harmonie, instrumentation, production, tempo/feel, tension.
-- **Texte** : langue, thèmes/contenu, concept/détournement, paroles (sortie compilée, dans la langue requise).
+- **Sound**: groove, harmony, instrumentation, production, tempo/feel, tension.
+- **Text**: language, themes/content, concept/détournement, lyrics (compiled output, in the required language).
 
-## 2. Trois registres
+## 2. Three registers
 
-Chaque affirmation (son ou texte) appartient à un registre. Les confondre est l'erreur à éviter.
+Every claim (sound or text) belongs to a register. Conflating them is the error to avoid.
 
-| Registre | Nature | Source | Falsifiable | Rôle au rendu |
+| Register | Nature | Source | Falsifiable | Role at render |
 |---|---|---|---|---|
-| **musicologique** | fait structurel (tempo, mode, instrumentation, traits de genre, langue/convention) | musicologue / praticien-expert | oui (juste/faux) | contraintes |
-| **ressenti** | expérience subjective (beau, « ça marche », reconnaissance, émotion) | tout auditeur | non (tenu, pas vrai) | intention / mood |
-| **politique** | valeurs / vision du monde (ce que le geste dit) | position assumée, attribuée | non, mais doit être **cohérente** | sens / choix structurels |
+| **musicological** | structural fact (tempo, mode, instrumentation, genre traits, language/convention) | musicologist / expert practitioner | yes (true/false) | constraints |
+| **felt** (*ressenti*) | subjective experience (beautiful, "it works", recognition, emotion) | any listener | no (held, not true) | intent / mood |
+| **political** | values / worldview (what the gesture says) | an owned, attributed position | no, but must be **coherent** | meaning / structural choices |
 
-## 3. Attribution — positions, pas vérités
+## 3. Attribution — positions, not truths
 
-Chaque affirmation porte sa **source**. Le musicologique peut être vrai ou faux (un expert tranche) ; le ressenti et le politique sont *tenus*, pas vrais. Un atome de genre = un faisceau de **positions attribuées**, contestables. Deux curateurs peuvent diverger : l'engine les tient tous les deux. (Pas de vérité de genre objective hors du registre musicologique.)
+Every claim carries its **source**. The musicological can be true or false (an
+expert decides); the felt and the political are *held*, not true. A genre atom =
+a bundle of **attributed positions**, contestable. Two curators may diverge: the
+engine holds both. (No objective genre truth outside the musicological register.)
 
-## 4. Atomes & molécules
+## 4. Atoms & molecules
 
-- **Atome** = un genre. Porte : description (par registre), **contraintes** (conventions, ex. fado→portugais), **exemplaires** (morceaux de référence + qui les reconnaît). Corriger un atome corrige **toutes** ses fusions.
-- **Molécule** = une fusion de deux atomes.
+- **Atom** = a genre. Carries: description (by register), **constraints** (conventions, e.g. fado→Portuguese), **exemplars** (reference tracks + who recognizes them). Fixing an atom fixes **all** its fusions.
+- **Molecule** = a fusion of two atoms.
 
-Le levier de curation, c'est l'**atome** (~600 genres), pas la molécule (360 000 fusions). Footwork mal défini empoisonne ses 600 croisements ; corrigé une fois, il les répare tous.
+The curation lever is the **atom** (~600 genres), not the molecule (360,000 fusions). A badly-defined Footwork poisons its 600 crossings; fixed once, it repairs them all.
 
-La boucle : on rend, l'oreille du cercle juge, et la correction retourne dans la **source** — un raté de genre corrige l'atome, un bel accident part au catalogue.
+The loop: we render, the circle's ear judges, and the fix goes back into the **source** — a genre miss fixes the atom, a beautiful accident goes to the catalogue.
 
 ```mermaid
 flowchart LR
-  Rep["représentation"] --> Cmp["compile"] --> Pr["prompt"] --> Mod["modèle"] --> Au["audio"]
-  Au --> Ear{"l'oreille du cercle"}
-  Ear -- "« pas du footwork »" --> Fix["corrige l'ATOME"]
+  Rep["representation"] --> Cmp["compile"] --> Pr["prompt"] --> Mod["model"] --> Au["audio"]
+  Au --> Ear{"the circle's ear"}
+  Ear -- "'not footwork'" --> Fix["fix the ATOM"]
   Fix --> Rep
-  Ear -- "« super, mais... »" --> Cat["catalogue : malentendu trouvé"]
+  Ear -- "'great, but...'" --> Cat["catalogue: found misunderstanding"]
 ```
 
-## 5. Garde-fous
+## 5. Guardrails
 
-- **Son** : cohérence musicologique (un expert).
-- **Texte** : plagiat, explicite, imitation d'artiste réel, prononciation, authenticité de la voix → déjà couverts par la chaîne **bitwize-music** (`lyric-writer`, `lyric-reviewer`, `plagiarism-checker`, `explicit-checker`, `pronunciation-specialist`, `voice-checker`).
+- **Sound**: musicological coherence (an expert).
+- **Text**: plagiarism, explicit content, real-artist imitation, pronunciation, voice authenticity → already covered by the **bitwize-music** chain (`lyric-writer`, `lyric-reviewer`, `plagiarism-checker`, `explicit-checker`, `pronunciation-specialist`, `voice-checker`).
 
-## 6. La vision politique (registre 3)
+## 6. The political vision (register 3)
 
-Salle des machines, pas paroles. Énactée dans les croisements, la licence, la forgerie — presque jamais dite.
+Engine room, not lyrics. Enacted in the crossings, the license, the forgery — almost never said.
 
-- **Authenticité = pouvoir** : on forge le réel pour exposer qu'il est *certifié*, pas essentiel. *(Debord, Benjamin.)*
-- **Contre l'enclosure, pour le commun** : moteur libre, AGPL. *(Hyde.)*
-- **Créolisation, pas lissage** : la friction féconde contre le smoothie / le slop. *(Glissant.)*
-- **Droit à l'opacité** : l'inclassable contre la lisibilité totale ; l'illisibilité comme résistance. *(Glissant, Scott.)*
-- **Pas de dehors propre — auto-implication** : on utilise les armes de l'ennemi et on l'avoue. *(Debord ; cf. GENESIS.)*
-- **Le sens contre le contenu** : l'oreille humaine contre le débit.
+- **Authenticity = power**: we forge the real to expose that it is *certified*, not essential. *(Debord, Benjamin.)*
+- **Against enclosure, for the commons**: free engine, AGPL. *(Hyde.)*
+- **Creolization, not flattening**: fertile friction against the smoothie / the slop. *(Glissant.)*
+- **Right to opacity**: the unclassifiable against total legibility; illegibility as resistance. *(Glissant, Scott.)*
+- **No clean outside — self-implication**: we use the enemy's weapons and we say so. *(Debord; see GENESIS.)*
+- **Meaning over content**: the human ear against throughput.
 
-**Synthèse positive :**
-> Le Malentendu défend la **créolisation** et le **droit à l'opacité**, contre l'**enclosure** et le **lissage** — avec les armes de l'ennemi, et en l'avouant.
+**Positive synthesis:**
+> Le Malentendu defends **creolization** and the **right to opacity**, against **enclosure** and **flattening** — with the enemy's weapons, and owning it.
 
-**Deux tests de cohérence** (par croisement / texte) :
-1. Ça **créolise** (friction féconde) ou ça **lisse** (slop) ?
-2. Ça **préserve l'opacité** (irréductible) ou ça **livre la culture à la machine** (extraction propre) ?
+**Two coherence tests** (per crossing / text):
+1. Does it **creolize** (fertile friction) or **flatten** (slop)?
+2. Does it **preserve opacity** (irreducible) or **hand culture to the machine** (clean extraction)?
 
-**Enjeu nommé : l'auto-implication.** Une IA qui fusionne des musiques de cultures colonisées risque d'être l'extraction qu'elle critique. Réponse assumée : *« oui, et l'œuvre le sait — c'est le sujet. »*
+Named stake: **self-implication.** An AI fusing music from colonized cultures risks being the extraction it critiques. Owned answer: *"yes, and the work knows it — that's the subject."*
 
-## 7. Deux garde-fous méta
+## 7. Two meta-guardrails
 
-- **Forme, pas sermon.** La politique vit dans le geste, pas dans des paroles qui font la leçon. Le slogan est récupérable ; le détournement, non.
-- **L'oreille juge, pas la théorie.** Une cohérence qui ne *sonne* pas est morte. Le cercle tranche la qualité ; Glissant ne sauve pas un morceau qui ennuie.
+- **Form, not sermon.** Politics lives in the gesture, not in preachy lyrics. The slogan is recuperable; the détournement isn't.
+- **The ear judges, not the theory.** A coherence that doesn't *sound* good is dead. The circle decides quality; Glissant won't save a boring track.
 
-## 8. Le roster de curateurs (par registre)
+## 8. The curator roster (by register)
 
-- **musicologique** → un musicologue / praticien-expert. **Trou actuel : il en manque un.** (un praticien-expert peut chevaucher : praticien + oreille.)
-- **ressenti** → le cercle d'auditeurs.
-- **texte** → paroliers + les garde-fous bitwize.
-- **politique** → toi : la vision est assumée et attribuée.
+- **musicological** → a musicologist / expert practitioner. **Current gap: we need one.**
+- **felt** → the circle of listeners.
+- **text** → lyricists + the bitwize guardrails.
+- **political** → the author: the vision is owned and attributed.
 
-Processus de décision complet : [personas-et-decision.md](personas-et-decision.md).
+Full decision process: [personas-et-decision.md](personas-et-decision.md) (FR).
 
 ---
 

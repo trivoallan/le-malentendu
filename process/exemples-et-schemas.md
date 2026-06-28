@@ -1,103 +1,106 @@
-# Le Malentendu — illustré : schémas & exemples
+🇬🇧 **English** · [🇫🇷 Français](exemples-et-schemas.fr.md)
 
-Compagnon de [`methode.md`](methode.md) (la spec) et [`personas-et-decision.md`](personas-et-decision.md) (qui décide).
-Les diagrammes sont en Mermaid : GitHub les rend automatiquement.
+# Le Malentendu — illustrated: diagrams & examples
+
+Companion to [`methode.md`](methode.md) (the spec) and
+[`personas-et-decision.md`](personas-et-decision.md) (who decides, FR).
+Diagrams are Mermaid: GitHub renders them automatically.
 
 ---
 
-## 1. L'architecture : une source, des backends
+## 1. The architecture: one source, many backends
 
-Le produit, c'est la **représentation** (la source). Les modèles sont interchangeables.
-Ce qu'on écoute renvoie corriger la source — jamais le tuyau.
+The product is the **representation** (the source). Models are interchangeable.
+What we listen to goes back to fix the source — never the pipe.
 
 ```mermaid
 flowchart LR
-  R["Représentation (source)<br/>model-agnostic"] --> C{"compilateur"}
-  C --> S["prompt Suno"]
-  C --> U["prompt Udio"]
+  R["Representation (source)<br/>model-agnostic"] --> C{"compiler"}
+  C --> S["Suno prompt"]
+  C --> U["Udio prompt"]
   C --> M["MusicGen"]
-  C --> H["brief humain"]
-  S -. "on écoute, on corrige" .-> R
+  C --> H["human brief"]
+  S -. "we listen, we fix" .-> R
 ```
 
-## 2. Atomes & molécules
+## 2. Atoms & molecules
 
-On cure les **atomes** (les ~600 genres), pas les molécules (les 360 000 fusions).
-Corriger un atome répare tous ses croisements d'un coup.
+We curate **atoms** (the ~600 genres), not molecules (the 360,000 fusions).
+Fixing an atom repairs all its crossings at once.
 
 ```mermaid
 flowchart LR
-  g1["Maloya (atome)"] --> F["Maloya × Acid blues (molécule)"]
-  g2["Acid blues (atome)"] --> F
-  g3["Footwork (atome)"] -. "corrigé une fois" .-> T["répare ses ~600 croisements"]
+  g1["Maloya (atom)"] --> F["Maloya × Acid blues (molecule)"]
+  g2["Acid blues (atom)"] --> F
+  g3["Footwork (atom)"] -. "fixed once" .-> T["repairs its ~600 crossings"]
 ```
 
-## 3. Les trois registres d'une affirmation
+## 3. The three registers of a claim
 
-Ne jamais les confondre : un fait, un ressenti et une valeur ne se traitent pas pareil.
+Never conflate them: a fact, a feeling and a value aren't handled the same way.
 
 ```mermaid
 flowchart TB
-  C["une affirmation sur une fusion"]
-  C --> M["🎼 musicologique<br/>fait · vérifiable · expert"]
-  C --> R["👂 ressenti<br/>subjectif · tenu · auditeur"]
-  C --> P["✊ politique<br/>valeurs · cohérent · assumé"]
+  C["a claim about a fusion"]
+  C --> M["🎼 musicological<br/>fact · verifiable · expert"]
+  C --> R["👂 felt<br/>subjective · held · listener"]
+  C --> P["✊ political<br/>values · coherent · owned"]
 ```
 
-## 4. La boucle de curation
+## 4. The curation loop
 
-Le moteur produit ; l'oreille du cercle juge ; la correction retourne dans la **source**.
-Un raté de genre corrige l'atome ; un bel accident part au catalogue.
+The engine produces; the circle's ear judges; the fix returns to the **source**.
+A genre miss fixes the atom; a beautiful accident goes to the catalogue.
 
 ```mermaid
 flowchart LR
-  Rep["représentation"] --> Cmp["compile"] --> Pr["prompt"] --> Mod["modèle"] --> Au["audio"]
-  Au --> Ear{"l'oreille du cercle"}
-  Ear -- "« pas du footwork »" --> Fix["corrige l'ATOME"]
+  Rep["representation"] --> Cmp["compile"] --> Pr["prompt"] --> Mod["model"] --> Au["audio"]
+  Au --> Ear{"the circle's ear"}
+  Ear -- "'not footwork'" --> Fix["fix the ATOM"]
   Fix --> Rep
-  Ear -- "« super, mais... »" --> Cat["catalogue : malentendu trouvé"]
+  Ear -- "'great, but...'" --> Cat["catalogue: found misunderstanding"]
 ```
 
-## 5. Le processus décisionnel (7 temps)
+## 5. The decision process (7 beats)
 
 ```mermaid
 flowchart TB
-  s1["1 · Cadrer"] --> s2["2 · Challenger les prémisses"] --> s3["3 · ≥2 alternatives"] --> s4["4 · Convoquer le panel"] --> s5["5 · Contre-voix si l'âme est en jeu"] --> s6["6 · Vérité-terrain : humains"] --> s7["7 · Décider + journaliser"]
+  s1["1 · Frame"] --> s2["2 · Challenge the premises"] --> s3["3 · ≥2 alternatives"] --> s4["4 · Convene the panel"] --> s5["5 · Counter-voice if the soul is at stake"] --> s6["6 · Ground truth: humans"] --> s7["7 · Decide + log"]
 ```
 
 ---
 
-# Trois exemples réels
+# Three real examples
 
-Ces trois cas sont arrivés pendant le développement. Ils illustrent la méthode mieux que n'importe quelle théorie.
+These three happened during development. They illustrate the method better than any theory.
 
-## Exemple 1 — Chant grégorien × Footwork : la correction musicologique 🎼
+## Example 1 — Gregorian chant × Footwork: the musicological correction 🎼
 
-1. **v1 (cliché)** : « 160 bpm, hi-hats rapides, vocaux hachés ».
-2. **Retour d'un praticien** (turntabliste) : *« ce n'est pas du footwork — c'est épuré, axé sur le kick, un léger décalage qui donne un groove hypnotique. »*
-3. **Correction de l'ATOME footwork** (pas de la fusion) → toutes les fusions où footwork apparaît en profitent.
-4. **Ancre** : un exemplaire vérité-sol (un morceau précis, à ~1:00), reconnu par le praticien.
+1. **v1 (cliché)**: "160 bpm, fast hats, chopped vocals."
+2. **Feedback from a practitioner** (turntablist): *"that's not footwork — it's stripped, kick-driven, a slight off-grid swing that gives a hypnotic groove."*
+3. **Fix the footwork ATOM** (not the fusion) → every footwork fusion benefits.
+4. **Anchor**: a ground-truth exemplar (a specific track, ~1:00), recognized by the practitioner.
 
-> **Ce que ça montre :** registre musicologique (juste/faux), curation au niveau **atome**, exemplaire comme point fixe qui fait *converger* les corrections.
+> **What it shows:** musicological register (true/false), curation at the **atom** level, the exemplar as a fixed point that makes corrections *converge*.
 
-## Exemple 2 — Fado × Dub : la contrainte constitutive ✍️
+## Example 2 — Fado × Dub: the constitutive constraint ✍️
 
-1. **Sortie** : pas chantée en portugais → *« ce n'est pas du fado. »*
-2. Le fado est **défini par sa langue** → ajout d'une **contrainte**, enregistrée comme **position attribuée** (« selon X »), pas comme vérité objective.
-3. **Insight backend** : dans Suno, un tag de style « in Portuguese » est *faible* — la langue se joue dans les **paroles**. La couche **texte** porte la langue ; le prompt de style reste en anglais.
+1. **Output**: not sung in Portuguese → *"that's not fado."*
+2. Fado is **defined by its language** → add a **constraint**, recorded as an **attributed position** ("per X"), not an objective truth.
+3. **Backend insight**: in Suno, a style tag "in Portuguese" is *weak* — language is carried by the **lyrics**. The **text** layer carries the language; the style prompt stays English.
 
-> **Ce que ça montre :** contraintes constitutives, la couche **texte** comme axe à part entière, et `prompt de style ≠ langue chantée`.
+> **What it shows:** constitutive constraints, the **text** layer as a full axis, and `style prompt ≠ sung language`.
 
-## Exemple 3 — Maloya × Acid blues : le malentendu trouvé 👂✊
+## Example 3 — Maloya × Acid blues: the found misunderstanding 👂✊
 
-1. **Sortie** : *« on se croirait à émission zéro, en Hongrie d'URSS »* (une auditrice). Le maloya a disparu.
-2. **Deux lectures :**
-   - **A — bug = lissage** : une musique de résistance réunionnaise effacée en rock de l'Est → le **test politique n°1** (créolisation vs lissage) échoue.
-   - **B — malentendu trouvé** : la machine a mésentendu la Réunion comme la Hongrie ; ce mésentendu précis, personne ne l'a voulu — c'est l'œuvre.
-3. **Décision : les deux.** On **renforce l'atome maloya** (A) *et* on **catalogue MR-001** (B).
-4. **Verdict du créateur** : *« je ne sais pas si c'est de la maloya, mais je trouve le morceau super. »* → le ressenti l'emporte sur la fidélité — mais **on ne l'étiquette pas « maloya ».**
+1. **Output**: *"sounds like USSR-era Hungary"* (a listener). The maloya vanished.
+2. **Two readings:**
+   - **A — bug = flattening**: a Réunionese resistance music erased into Eastern-bloc rock → **political test #1** (creolization vs flattening) fails.
+   - **B — found misunderstanding**: the machine misheard Réunion as Hungary; nobody wanted that precise mishearing — it's the work.
+3. **Decision: both.** **Strengthen the maloya atom** (A) *and* **catalogue it as MR-001** (B).
+4. **Maker's verdict**: *"I don't know if it's maloya, but I find the track great."* → felt wins over fidelity — but **don't label it "maloya."**
 
-> **Ce que ça montre :** registre ressenti, le test politique du **lissage**, la dualité **méthode / catalogue** (l'une corrige, l'autre célèbre), et *non = malentendu* en acte.
+> **What it shows:** the felt register, the political **flattening** test, the **method / catalogue** duality, and *non = malentendu* in action.
 
 ---
 

@@ -1,41 +1,47 @@
-[🇫🇷 Français](README.md) · [🇬🇧 English](README.en.md)
+🇬🇧 **English** · [🇫🇷 Français](README.fr.md)
 
 # Le Malentendu
 
-> « La musique qui n'a jamais existé. »
-> **non = malentendu**
+> "Music that never existed."
+> **non = malentendu** *(no = misunderstanding)*
 
-> 🗣️ **RFC en cours — viens commenter :** [PR #1 — Méthodologie](https://github.com/trivoallan/le-malentendu/pull/1) · [commenter en ligne](https://github.com/trivoallan/le-malentendu/pull/1/files)
+An **open method** for fusing musical genres. The product is the **method** — a
+*model-agnostic* representation of a fusion + a compiler — not the audio, not the
+prompt. The models (Suno, Udio, MusicGen, a human musician) are **interchangeable
+backends**.
 
-Une **méthode ouverte** pour fusionner les genres musicaux. Le produit, c'est la
-**méthode** — une représentation *model-agnostic* d'une fusion + un compilateur —
-pas l'audio, pas le prompt. Les modèles (Suno, Udio, MusicGen, un musicien) sont
-des **backends interchangeables**.
+Free, under **AGPLv3**.
 
-Libre, sous **AGPLv3**.
+> 🗣️ **Open RFC — come comment:** [PR #1 — Methodology](https://github.com/trivoallan/le-malentendu/pull/1) · [comment inline](https://github.com/trivoallan/le-malentendu/pull/1/files)
 
-## Ce dépôt
+## This repo
 
 | | |
 |---|---|
-| [`process/methode.md`](process/methode.md) | la spec : 2 couches (son + texte), 3 registres (musicologie / ressenti / politique), atomes vs molécules, vision politique |
-| [`process/rfc/`](process/rfc/) | les RFC — la méthode mise en débat. **La discussion se fait sur les Pull Requests.** |
-| [`poc/`](poc/) | la preuve : `python3 poc/compile.py` compile une fusion vers un prompt Suno **et** un brief humain (deux backends, une source) |
-| [`catalogue/`](catalogue/) | les *malentendus trouvés* — les beaux accidents qu'on garde |
-| [`GENESIS.md`](GENESIS.md) | comment le projet est né, à découvert |
+| [`process/methode.md`](process/methode.md) | the spec: 2 layers (sound + text), 3 registers (musicological / felt / political), atoms vs molecules, political vision |
+| [`process/exemples-et-schemas.md`](process/exemples-et-schemas.md) | diagrams + 3 real worked examples |
+| [`process/rfc/`](process/rfc/) | the RFCs — the method put up for debate. **Discussion happens in the Pull Requests.** |
+| [`poc/`](poc/) | the proof: `python3 poc/compile.py` compiles a fusion into a Suno prompt **and** a human brief (two backends, one source) |
+| [`catalogue/malentendus.md`](catalogue/malentendus.md) | the *found misunderstandings* — the happy accidents we keep |
+| [`GENESIS.md`](GENESIS.md) | how the project was born, in the open (FR — EN pending) |
 
-## Participer
+## Take part
 
-Lis la RFC ouverte et **commente la Pull Request**. Indique ton registre :
-🎼 musicologie (un fait) · 👂 ressenti (subjectif) · ✊ politique (valeurs).
-Le désaccord est le sujet.
+Read the open RFC and **comment on the Pull Request**. Tag your register:
+🎼 musicological (a fact) · 👂 felt (subjective) · ✊ political (values).
+Disagreement is the point.
 
-## Lancer la preuve
+## Run the proof
 
 ```bash
-python3 poc/compile.py          # compile les fusions -> Suno + brief
+python3 poc/compile.py          # compile fusions -> Suno + brief
 python3 poc/compile.py --check  # self-check
 ```
+
+## Languages
+
+**English is canonical** (`*.md`); French lives in `*.fr.md` siblings.
+`GENESIS` and `process/personas-et-decision` are still French only — EN translation pending.
 
 ---
 
