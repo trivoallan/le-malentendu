@@ -1,3 +1,5 @@
+[🇬🇧 English](malentendus.md) · 🇫🇷 **Français**
+
 # Malentendu Records — catalogue des malentendus trouvés
 
 Des résultats que le moteur a produits **sans qu'on les vise** — gardés parce que

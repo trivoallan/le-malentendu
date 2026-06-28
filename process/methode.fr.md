@@ -1,8 +1,10 @@
+[🇬🇧 English](methode.md) · 🇫🇷 **Français**
+
 # La méthode — modèle de représentation
 
 > Spec **vivante**. C'est ici qu'on raffine le modèle ; le PoC ([`../poc/`](../poc/))
 > l'implémente quand la spec est stable, pour éviter de bricoler le JSON à chaque idée.
-> Voir aussi : [GENESIS.md](../GENESIS.md) (comment c'est né) · [personas-et-decision.md](personas-et-decision.md) (qui décide) · [exemples-et-schemas.md](exemples-et-schemas.md) (schémas + exemples).
+> Voir aussi : [GENESIS.md](../GENESIS.fr.md) (comment c'est né) · [personas-et-decision.md](personas-et-decision.fr.md) (qui décide) · [exemples-et-schemas.md](exemples-et-schemas.fr.md) (schémas + exemples).
 
 ## 0. Principe fondateur
 
@@ -94,7 +96,7 @@ Salle des machines, pas paroles. Énactée dans les croisements, la licence, la 
 - **texte** → paroliers + les garde-fous bitwize.
 - **politique** → toi : la vision est assumée et attribuée.
 
-Processus de décision complet : [personas-et-decision.md](personas-et-decision.md).
+Processus de décision complet : [personas-et-decision.md](personas-et-decision.fr.md).
 
 ---
 

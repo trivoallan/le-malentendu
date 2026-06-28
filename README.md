@@ -23,7 +23,7 @@ Free, under **AGPLv3**.
 | [`process/rfc/`](process/rfc/) | the RFCs — the method put up for debate. **Discussion happens in the Pull Requests.** |
 | [`poc/`](poc/) | the proof: `python3 poc/compile.py` compiles a fusion into a Suno prompt **and** a human brief (two backends, one source) |
 | [`catalogue/malentendus.md`](catalogue/malentendus.md) | the *found misunderstandings* — the happy accidents we keep |
-| [`GENESIS.md`](GENESIS.md) | how the project was born, in the open (FR — EN pending) |
+| [`GENESIS.md`](GENESIS.md) | how the project was born, in the open |
 
 ## Take part
 
@@ -40,8 +40,7 @@ python3 poc/compile.py --check  # self-check
 
 ## Languages
 
-**English is canonical** (`*.md`); French lives in `*.fr.md` siblings.
-`GENESIS` and `process/personas-et-decision` are still French only — EN translation pending.
+**English is canonical** (`*.md`); every document has a French sibling (`*.fr.md`). 100% bilingual.
 
 ---
 

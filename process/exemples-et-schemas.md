@@ -3,7 +3,7 @@
 # Le Malentendu — illustrated: diagrams & examples
 
 Companion to [`methode.md`](methode.md) (the spec) and
-[`personas-et-decision.md`](personas-et-decision.md) (who decides, FR).
+[`personas-et-decision.md`](personas-et-decision.md) (who decides).
 Diagrams are Mermaid: GitHub renders them automatically.
 
 ---

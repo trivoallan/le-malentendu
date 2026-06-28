@@ -1,3 +1,5 @@
+[🇬🇧 English](README.md) · 🇫🇷 **Français**
+
 # PoC — la méthode, pas le modèle
 
 Principe : **le produit, c'est la méthode**, pas l'audio ni le prompt Suno.

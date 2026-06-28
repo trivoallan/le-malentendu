@@ -1,79 +1,75 @@
-# Personas & processus décisionnel
+🇬🇧 **English** · [🇫🇷 Français](personas-et-decision.fr.md)
 
-> La méthode explicite derrière les décisions du projet. On l'expose, comme le
-> reste (voir [`GENESIS.md`](../GENESIS.md)). Principe de base : **les personas-IA
-> aiguisent, les humains ancrent, c'est toi qui décides.**
+# Personas & decision process
 
-## Deux sens du mot « persona »
+> The explicit method behind the project's decisions. We expose it, like the rest
+> (see [`../GENESIS.md`](../GENESIS.md)). Core principle: **AI personas sharpen,
+> humans ground, you decide.**
 
-| | Personas-IA | Advisors-humains |
+## Two meanings of "persona"
+
+| | AI personas | Human advisors |
 |---|---|---|
-| nature | postures *simulées* | gens *réels* |
-| coût | gratuit, instantané, infini | rares, lents |
-| enjeu | aucun | réel (métier, réseau, réputation) |
-| usage | **mettre sous pression** | **vérité-terrain** |
+| nature | *simulated* stances | *real* people |
+| cost | free, instant, infinite | scarce, slow |
+| stake | none | real (craft, network, reputation) |
+| use | **pressure-test** | **ground truth** |
 
-Ne jamais utiliser l'un à la place de l'autre. Un « bravo » d'un persona-IA ne
-vaut rien ; un « non » d'un humain qui peut dire non vaut tout.
+Never use one in place of the other. An AI persona's "bravo" is worth nothing; a
+"no" from a human who can say no is worth everything.
 
-## Le roster
+## The roster
 
-### A. Diagnostic — gstack natif (`office-hours`)
-- **Avocat YC / office-hours** — force la spécificité, la réalité de la demande,
-  le coin le plus étroit. *Force : « est-ce réel, pour qui, et quelle est la plus
-  petite chose payable ? »*
+### A. Diagnostic — gstack native (`office-hours`)
+- **YC advisor / office-hours** — forces specificity, demand reality, the narrowest wedge. *Forces: "is it real, for whom, and what's the smallest payable thing?"*
 
-### B. Panel adverse — gstack (`challenge-personas`)
-Des rôles métier qui attaquent le plan. On en convoque 2-3 selon la décision.
-- **CEO / Founder** — stratégie, identité, focus. *« L'unique chose ? Pourquoi maintenant ? »*
-- **Finance** — argent, retour, unit economics. *« Où est le revenu ? D'où vient le retour ? »*
-- **Release Eng** — faisabilité, scope, exécution. *« Qui construit ? Est-ce sur-dimensionné ? »*
-- **Product** — client, demande réelle. *« Quelqu'un d'autre que toi en veut-il ? »*
-- **Legal / Sécurité** — droits, exposition. *« As-tu le droit ? Qu'est-ce qui te poursuit ? »*
+### B. Adversarial panel — gstack (`challenge-personas`)
+Business roles that attack the plan. Convene 2-3 depending on the decision.
+- **CEO / Founder** — strategy, identity, focus. *"The one thing? Why now?"*
+- **Finance** — money, return, unit economics. *"Where's the revenue? Where's the return?"*
+- **Release Eng** — feasibility, scope, execution. *"Who builds it? Is it over-scoped?"*
+- **Product** — customer, real demand. *"Does anyone but you want it?"*
+- **Legal / Security** — rights, exposure. *"Do you have the right? What sues you?"*
 
-### C. Contre-voix — personas customs (personnages)
-L'axe que l'optimisation startup ne calcule pas. Invoquées dès que l'âme est en jeu.
-- **Guy Debord** (situationniste) — détournement, récupération, spectacle. *« Situation vécue, ou accumulation de spectacle ? »*
-- **Steve Albini** (artisan, éthique du deal) — métier, posséder son travail, refuser le parasite. *« Qui se fait avoir ici ? C'est honnête ? »*
+### C. Counter-voices — custom personas (characters)
+The axis startup optimization can't compute. Invoked whenever the soul is at stake.
+- **Guy Debord** (situationist) — détournement, recuperation, spectacle. *"A lived situation, or accumulation of spectacle?"*
+- **Steve Albini** (tradesman, deal ethics) — craft, owning your work, refusing the parasite. *"Who's getting screwed here? Is it honest?"*
 
-### D. Advisors humains (réels, mappés en rôles — noms tenus privés)
-- **Opérateur·rice de l'industrie** (label / prod AV / pub). Rôle : **marché réel, droits, accès**.
-- **Praticien-expert** (ex. turntabliste de haut niveau). Rôle : **oracle qualité** (le morceau tient-il ?) + réseau.
-- **Compositeur / builder génératif**. Rôle : **co-bâtisseur** + **canari du milieu créatif** + complice de l'âme.
+### D. Human advisors (real, mapped to roles — names kept private)
+- **Entertainment-industry operator** (label / AV production / advertising). Role: **real market, rights, access**.
+- **Expert practitioner** (e.g. a high-level turntablist). Role: **quality oracle** (does the track hold?) + network.
+- **Composer / generative builder**. Role: **co-builder** + **canary of the creative world** + keeper of the soul.
 
-## Le processus (7 temps)
+## The process (7 beats)
 
-1. **Cadrer** (office-hours) — énoncer la *vraie* décision, sans flou.
-2. **Challenger les prémisses** — qu'est-ce qu'on tient pour acquis ? agree/disagree.
-3. **Générer ≥ 2 alternatives** — minimale / idéale / latérale. Jamais une seule.
-4. **Convoquer le bon panel** (par type) :
-   - argent / scope → **Finance + Eng**
-   - stratégie / identité → **CEO + Product**
-   - droits / risque → **Legal**
-5. **Contre-voix obligatoire dès que l'âme est en jeu** (monétiser, passer à
-   l'échelle, rendre public, risque de récupération) → **Debord / Albini**.
-6. **Vérité-terrain (humains) pour les paris existentiels** (le marché existe-t-il ?
-   est-ce légal ? la musique tient-elle ?). Le panel IA ne suffit pas.
-7. **Décider + journaliser** — trancher, consigner la décision durable, noter
-   *quelle voix* a fait changer d'avis.
+1. **Frame** (office-hours) — state the *real* decision, no fuzz.
+2. **Challenge the premises** — what's taken for granted? agree/disagree.
+3. **Generate ≥2 alternatives** — minimal / ideal / lateral. Never just one.
+4. **Convene the right panel** (by type):
+   - money / scope → **Finance + Eng**
+   - strategy / identity → **CEO + Product**
+   - rights / risk → **Legal**
+5. **Mandatory counter-voice when the soul is at stake** (monetize, scale, go public, recuperation risk) → **Debord / Albini**.
+6. **Ground truth (humans) for existential bets** (does the market exist? is it legal? does the music hold?). The AI panel isn't enough.
+7. **Decide + log** — make the call, record the durable decision, note *which voice* changed your mind.
 
-## Méta-règles
+## Meta-rules
 
-- **Les personas-IA ne décident rien. Ils aiguisent. C'est toi qui décides.**
-- **IA = pression. Humains = sol.** Pas d'interversion.
-- **Commence par qui peut dire non**, pas par qui va t'encourager.
-- **Une contre-voix par décision à âme.** Sinon, c'est l'optimisation qui gagne par défaut.
+- **AI personas decide nothing. They sharpen. You decide.**
+- **AI = pressure. Humans = ground.** No swapping.
+- **Start with who can say no**, not who will cheer.
+- **One counter-voice per soul-level decision.** Otherwise optimization wins by default.
 
-## Ajouter un persona custom
+## Adding a custom persona
 
-La recette, trois ingrédients :
+The recipe, three ingredients:
 
-> **posture** + **intérêt propre** + **l'unique question qu'il force et que personne d'autre ne pose.**
+> **stance** + **own incentive** + **the single question it forces that no one else asks.**
 
-Exemples : Debord = la récupération · Albini = le deal juste · (futur) un
-*Musicologue* = la cohérence harmonique · un *Archiviste* = la crédibilité de la
-forgerie. Un persona qui ne force pas une question neuve ne sert à rien : ne
-l'ajoute pas.
+Examples: Debord = recuperation · Albini = the fair deal · (future) a *Musicologist*
+= harmonic coherence · an *Archivist* = the credibility of the forgery. A persona
+that doesn't force a new question is useless: don't add it.
 
 ---
 
