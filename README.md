@@ -3,6 +3,8 @@
 > « La musique qui n'a jamais existé. »
 > **non = malentendu**
 
+> 🗣️ **RFC en cours — viens commenter :** [PR #1 — Méthodologie](https://github.com/trivoallan/le-malentendu/pull/1) · [commenter en ligne](https://github.com/trivoallan/le-malentendu/pull/1/files)
+
 Une **méthode ouverte** pour fusionner les genres musicaux. Le produit, c'est la
 **méthode** — une représentation *model-agnostic* d'une fusion + un compilateur —
 pas l'audio, pas le prompt. Les modèles (Suno, Udio, MusicGen, un musicien) sont
